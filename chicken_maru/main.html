@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> chickenmaru main </title>
+    <!-- 자바스크립트 라이브러리인 jQuery 불러오기 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/navi.js"></script>
+    
+    <script>
+        //JQuery 시작
+        $(function(){
+
+        }); //JQuery 종료
+    </script>
+    <link rel="stylesheet" href="dist/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- 구글폰트 아이콘 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+     <!-- 아이폰 홈화면 아이콘 추가 -->
+     <link rel="apple-touch-icon-precomposed" href="img/ch_maru_favicon.png">
+ 
+     <!-- chrome, safari, ms-edge -->
+     <link rel="shortcut icon" href="img/ch_maru_favicon.png">
+</head>
+<body>
+    <header id="gnb">
+        <div id="navi_wrap" class="row_c">
+            <div id="logo"><a href="main.html"><img src="img/main/logo.png" alt="치킨마루"></a></div>
+
+            <!-- 모바일 헤더 -->
+             <div id="mb_top_btn">
+                <div id="menu">
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </a>
+                </div>
+             </div>
+             <!-- 모바일 네비게이션 어두운 배경, 닫기 버튼 -->
+            <div id="mb_navi_bg">
+                <div class="mb_close">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </div>
+            </div>
+            
+             <!-- 모바일 네비게이션 복사 영역 -->
+            <div id="mb_navi">
+                <nav class="mb_navi_wrap">
+                    <!-- pc:#navi => mobile navi copy : .mb_navi_wrap 안의 ul -->
+                </nav>
+            </div>
+
+            <nav id="navi">
+                <ul class="main_navi">
+                    <li><!-- 1 -->
+                        <a href="#">메뉴소개</a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="sub01.html">신메뉴</a></li>
+                                <li><a href="sub01.html">크리스피 치킨</a></li>
+                                <li><a href="sub01.html">현미순살 치킨</a></li>
+                                <li><a href="sub01.html">빠사칸</a></li>
+                                <li><a href="sub01.html">콤보/스틱/윙봉</a></li>
+                                <li><a href="sub01.html">스페셜 메뉴</a></li>
+                                <li><a href="sub01.html">사이드 메뉴</a></li>
+                                <li><a href="sub01.html">홀 안주</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><!-- 2 -->
+                        <a href="#">치킨마루</a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="sub02.html">브랜드 소개</a></li>
+                                <li><a href="sub02.html">연혁</a></li>
+                                <li><a href="sub02.html">비전</a></li>
+                                <li><a href="sub02.html">빠사칸</a></li>
+                                <li><a href="sub02.html">사업제안 및 제휴</a></li>
+                                <li><a href="sub02.html">인재채용</a></li>
+                                <li><a href="sub02.html">찾아오시는 길</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><!-- 3 -->
+                        <a href="#">매장안내</a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="sub03.html">신규매장</a></li>
+                                <li><a href="sub03.html">매장찾기</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><!-- 4 -->
+                        <a href="#">창업안내</a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="sub04.html">성공 포인트</a></li>
+                                <li><a href="sub04.html">본사지원</a></li>
+                                <li><a href="sub04.html">물류시스템</a></li>
+                                <li><a href="sub04.html">창업비용</a></li>
+                                <li><a href="sub04.html">가맹문의</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><!-- 5 -->
+                        <a href="#">커뮤니티</a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">마루 홍보실</a></li>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">메뉴레시피</a></li>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">고객의 소리</a></li>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">가맹점공간</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+                <div id="log_navi">
+                    <ul>
+                        <li>
+                            <a href="sub_login.html">로그인</a>
+                        </li>
+                        <li>
+                            <a href="sub_login.html">회원가입</a>
+                        </li>
+                    </ul>
+                </div><!-- log_navi -->
+            </nav>
+            
+        </div><!-- navi_wrap -->
+        <div id="navi_bg">
+        </div>    
+    </header>
+
+<!-- content -->
+    <div id="main" >
+        <div id="new_menu" >
+            <div id="main_part" class="row_c">
+                <ul>
+                    <li class="two"><img src="img/main/main_00.png" alt="목살로망"></li>
+                    <li class="three"><img src="img/main/main_000.png" alt="닭 한마리에서 오직 1%만 나오는 목살, 
+                        약 40마리의 닭 목 순살에 통후추를 갈아 넣은 
+                        현미파우더를 입혀 더욱 바삭하고 맛있습니다."></li>
+                    <li class="star"><figure><img src="img/main/main_03.png" alt="방문포장 4천원 할인"></figure>
+                        <figure><img src="img/main/main_04.png" alt="마요라차 소스증정"></figure>
+                    </li>
+                </ul>
+                <div>
+                    <div class="ch01">
+                        <ul>
+                            <li><img src="img/main/main_02.png" alt="목살로망 할라마요"></li>
+                            <li class="ch01_t"><strong>목살로망 할라마요   22,000</strong><span>매콤한 할라피뇨와 달달 마요네즈를    
+                                조합한 소스를 버무린 목살 치킨</span></li>
+                        </ul>
+                    </div>   
+                    <div class="ch02">
+                        <ul>
+                            <li><img src="img/main/main_01.png" alt="목살로망 페퍼콕콕"></li>
+                            <li class="ch02_t"><strong>목살로망 페퍼콕콕   20,000</strong><span>고소하고 바삭한 현미 파우더에 
+                        후추가 콕콕 골고루 박힌 목살 치킨</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- main_part -->
+        </div><!-- new_menu -->
+
+        <div id="menu_lst" class="row_c">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">    
+                        <figure>
+                            <img src="img/main/menu.png" alt="크리스피 치킨">
+                        </figure>
+                        <div>                         
+                            <h2>크리스피</h2>  
+                            <span>바삭하고 담백한 치킨마루 대표 메뉴</span>      
+                            <div class="more_btn">
+                                <a href="sub01.html">더보기</a>
+                            </div>
+                        </div>
+                    </div><!-- swiper-slide -->
+
+                    <div class="swiper-slide">                        
+                        <figure>
+                            <img src="img/main/menu2.png" alt="더블링 간장">
+                        </figure>                       
+                        <div>
+                            <h2>더블링 간장</h2>                              
+                            <span>짭쪼롬한 간장치킨에 스윗어니언 소스를 뿌리고 청양고추까지 듬뿍 얹은 더블링 간장</span>
+                            <div class="more_btn">
+                                <a href="sub01.html">더보기</a>
+                            </div> 
+                        </div>
+                    </div><!-- swiper-slide -->
+
+                    <div class="swiper-slide">
+                        <figure>
+                            <img src="img/main/menu3.png" alt="더블링 양념">
+                        </figure>
+                        <div>
+                            <h2>더블링 양념</h2>
+                            <span>달콤한 양념치킨 위에 스윗어니언 소스를 듬뿍 뿌려 달콤하고 상큼한 메뉴</span>
+                            <div class="more_btn">
+                                <a href="sub01.html">더보기</a>
+                            </div>
+                        </div>
+                    </div><!-- swiper-slide -->
+                </div><!-- swiper-wrapper -->
+
+                 <!-- Add Pagination / 블릿버튼 -->
+            <div class="swiper-pagination bullet1"></div>
+            
+          </div>
+           <!-- Add Arrows -->
+            <div class="swiper-button-next next_sw1"></div>
+            <div class="swiper-button-prev prev_sw1"></div>
+        </div><!-- menu_lst -->  
+
+        <div id="sh_st" class="row_c">
+            <div id="search" >
+                <div>
+                    <h2>매장검색</h2>
+                    <form action="sub03.html">
+                        <input type="text" name="sh" id="sh" placeholder="검색어를 입력해 주세요">
+                        <input type="image" src="img/main/search.png" alt="검색" id="sh_btn">
+                    </form>
+                </div>
+                        
+                   
+             </div><!-- search -->
+    
+             <div id="start_up">
+               <img src="img/main/main_06.jpg" alt="가맹문의 1800-9958">
+             </div>
+        </div><!-- sh_st -->
+     
+        <div id="notice" class="row_c">
+            <div class="notice_t">
+                <ul>
+                    <li><img src="img/main/simbol.png" alt="치킨마루 심볼"></li>
+                    <li>마루소식</li>
+                </ul>
+            </div>
+            <div id="notice_c">
+                <ul>
+                    <li>
+                        <a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">[홍보실] 치킨마루, 신메뉴 시식 이색 아르바이트 진행</a>
+                        <time datetime="2024-04-15">2024-04-15</time>
+                    </li>
+                    <li>
+                        <a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">[홍보실] 치킨마루, 신인 걸그룹 캔디샵과 함께 신메뉴 ‘목살로망’ 홍보</a>
+                        <time datetime="2024-04-15">2024-04-15</time>
+                    </li>
+                    <li>
+                        <a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">[홍보실] 걸그룹·중소기업 손잡고 함께 크자</a>
+                        <time datetime="2024-04-15">2024-04-15</time>
+                    </li>
+                    <li>
+                        <a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">[홍보실] 치킨마루, 첫 신메뉴 목살로망 2종 선보여</a>
+                        <time datetime="2024-04-15">2024-04-15</time>
+                    </li>
+                    <li>
+                        <a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">[홍보실] 치킨마루, IBS와 대학생 산학협력 프로젝트 진행</a>
+                        <time datetime="2024-04-15">2024-04-15</time>
+                    </li>
+                    <li>
+                        <a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">[홍보실] 치킨마루, 펩시와 숏폼 콘테스트 진행</a>
+                        <time datetime="2024-04-15">2024-04-15</time>
+                    </li>
+                </ul>
+            </div>
+            
+            <ul>
+                <li class="more_btn"><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">더보기</a></li>
+            </ul>
+        </div><!-- notice -->
+
+        <div id="youtube" class="row_c">
+            <div id="youtube_t">
+                <ul>
+                    <li><img src="img/main/simbol.png" alt="치킨마루 심볼"></li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+
+            <div id="youtube_c">
+                <div id="mv_wrap">
+                    <div id="movie">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/__2lrf6VT1c?si=8sfNF6bGpVVMbXjs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div><!-- movie -->
+                </div><!-- mv_wrap -->
+                <div id="youtube_btn">
+                    <ul>
+                        <li>
+                            <img src="img/main/arrow01.png" alt="화살표1">
+                            <a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">홍보영상</a>
+                        </li>
+                        <li>
+                            <img src="img/main/arrow02.png" alt="화살표2">
+                            <a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">메뉴 레시피</a>
+                        </li>
+                        <li class="more_btn"><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">더보기</a></li>
+                    </ul>
+                </div>
+            </div><!-- youtube_c -->
+            
+        </div><!-- youtube -->
+        
+        <div id="insta">
+            <div id="insta_t">
+                <ul>
+                    <li><img src="img/main/simbol.png" alt="치킨마루 심볼"></li>
+                    <li>Instagram</li>
+                </ul>
+            </div>
+            <div id="insta_c">
+                <!-- Swiper -->
+                <div id="slide">
+
+                <div class="swiper sw1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/main/image_01.jpg" alt="image_01"></div>
+                        <div class="swiper-slide"><img src="img/main/image_02.jpg" alt="image_02"></div>
+                        <div class="swiper-slide"><img src="img/main/image_03.jpg" alt="image_03"></div>
+                        <div class="swiper-slide"><img src="img/main/image_04.jpg" alt="image_04"></div>
+                        <div class="swiper-slide"><img src="img/main/image_05.jpg" alt="image_05"></div>
+                        <div class="swiper-slide"><img src="img/main/image_01.jpg" alt="image_01"></div>
+                        <div class="swiper-slide"><img src="img/main/image_02.jpg" alt="image_02"></div>
+                        <div class="swiper-slide"><img src="img/main/image_03.jpg" alt="image_03"></div>
+                        <div class="swiper-slide"><img src="img/main/image_04.jpg" alt="image_04"></div>
+                        <div class="swiper-slide"><img src="img/main/image_05.jpg" alt="image_05"></div>
+                        <div class="swiper-slide"><img src="img/main/image_01.jpg" alt="image_01"></div>
+                        <div class="swiper-slide"><img src="img/main/image_02.jpg" alt="image_02"></div>
+                        <div class="swiper-slide"><img src="img/main/image_03.jpg" alt="image_03"></div>
+                        <div class="swiper-slide"><img src="img/main/image_04.jpg" alt="image_04"></div>
+                        <div class="swiper-slide"><img src="img/main/image_05.jpg" alt="image_05"></div>
+                    </div><!-- swiper-wrappe -->
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div><!-- swiper sw1 -->
+
+                <ul>
+                    <li class="more_btn"><a href="#">더보기</a></li>
+                </ul>
+
+                </div><!-- slide -->
+            </div><!-- insta_c -->
+        </div><!-- insta -->
+        
+    </div><!-- main -->
+
+    
+    <footer>
+        <div id="footer_wrap">
+            <div id="foot_award" class="row_c">
+                <img src="img/main/footer_award.jpg" alt="인증서">
+            </div>
+            
+            <div id="foot_group">
+                <div class="row_c">
+                    <div id="foot_logo">
+                        <img src="img/main/footer_logo.png" alt="다인에프씨">
+                    </div>
+                    <div id="foot_text">
+                        <div class="foot_top">
+                            <ul>
+                                <li><a href="#">사업제안및제휴</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">개인정보취급방침</a></li>
+                                <li><a href="#">이메일무단수집거부</a></li>
+                                <li><a href="#">사이트맵</a></li>
+                            </ul>
+                        </div><!-- foot_top -->
+                        <div class="foot_bottom">
+                            <ul>
+                                <li>다인에프씨(주)ㅣ사업자등록번호 217-81-24157ㅣ대표이사 이현우</li>
+                                <li>주소: 경기도 의정부시 동일로 119 2층ㅣ대표전화: 02-905-7577ㅣ팩스: 02-938-7540 <br>
+                                치킨마루 창업문의: 1800-9958</li> 
+                            </ul>
+                        </div><!-- foot_bottom -->
+                        <div id="mb_foot_bottom">
+                            <ul>
+                                <li>대표전화: 02-905-7577ㅣ팩스: 02-938-7540</li>
+                                <li>치킨마루 창업문의: 1800-9958 </li>
+                            </ul>
+                        </div>
+                        <div class="foot_copy">
+                            Copyright &copy; chickenmaru 치킨마루. All Rights Reserved.
+                        </div>
+                    </div><!-- foot_text -->
+                </div>
+            </div><!-- foot_group -->
+            
+        </div>
+    </footer>
+
+
+    <!-- Swiper JS -->
+  <script src="dist/js/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('#menu_lst .swiper', {
+      slidesPerView: 1, //보여지는 슬라이드 개수
+      spaceBetween: 10, //슬라이드 사이 공간
+      loop: true,  // 반복 슬라이드
+      keyboard: {
+        enabled: true,  //키보드 제어
+      },
+      autoplay: {
+        delay: 4000, // 4초마다 슬라이드
+        disableOnInteraction: true, //버튼 제어시 멈춤
+      },
+      pagination: {
+        el: '.bullet1',
+        clickable: true, //블릿버튼 제어
+      },
+      navigation: { //이전다음버튼 제어
+        nextEl: '.next_sw1',
+        prevEl: '.prev_sw1',
+      },
+    });
+
+    var swiper2 = new Swiper('.sw1', {
+      spaceBetween: 0,
+      loop: true, 
+      grabCursor:true,
+      centeredSlides:true,
+      slidesPerView:5,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true, //블릿버튼 제어
+      },
+      breakpoints:{
+        768:{
+            slidesPerView:5,
+            centeredSlides:true,
+        },
+        502:{
+            slidesPerView:4,
+            centeredSlides:false,
+        },
+        320:{
+            slidesPerView:3,
+            centeredSlides:false,
+        }
+      }
+    });
+      
+  </script>
+</body>
+</html>

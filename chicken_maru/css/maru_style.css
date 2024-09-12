@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+#login_wrap{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* login_select */
+#login_select{
+    margin: 100px auto 50px;
+    width: 270px;
+    background: #e9e9e9;
+    border: 1px solid #000;
+    border: none;
+    border-radius: 50px;
+}
+#login_select ul{
+    display: flex;
+    justify-content: center;
+}
+#login_select ul li{
+    padding: 0 20px;
+    position: relative;
+}
+#login_select ul li a{
+    display: block;
+    padding: 8px;
+    font-size: 0.9em;
+}
+#login_select ul .active a{
+    color: #F39800;
+}
+
+
+#login_select ul .active::after{
+    content: '';
+    position: absolute;
+    border-right: 1px solid #fff;
+    right: 0;
+    height: 13px;
+    top: 13px;
+}
+
+
+/* login */
+h2{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#login form ul li{
+    display: flex;
+    justify-content: center;
+}
+.log_box{
+    border: 1px solid #000;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background: #e9e9e9;
+    padding: 20px 0;
+}
+.log_box li{
+    margin: 10px;
+}
+.log_box label{
+    display: inline-block;
+    width: 100px;
+    
+}
+.log_box #id, .log_box #pw{
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 3px;
+    text-indent: 5px;
+}
+.log_box li #id{
+    margin-bottom: 10px;
+}
+
+
+
+/* sign in */
+.signin{
+    font-size: 0.8em;
+}
+.signin div{
+    margin: 0 20px;
+}
+
+
+/* login btn */
+#login #l_btn{
+    /* padding: 15px 155px; */
+    width: 100%;
+    height: 55px;
+    margin: 15px auto;
+    background: #444;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+
+
+/* sh_join */
+.sh_join{
+    font-size: 0.8em;
+}
+#login ul .sh_join{
+    justify-content: space-between;
+}
+.sh_join a:nth-child(2){
+    font-weight: bold;
+}

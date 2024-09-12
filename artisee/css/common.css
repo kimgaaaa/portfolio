@@ -1,0 +1,363 @@
+@charset "utf-8";
+.row_c{
+    max-width: 1720px;
+    margin: 0 auto;
+}
+#gnb{
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+#navi_wrap{
+    display: flex;
+    align-items: center;
+    height: 110px;
+}
+#logo{
+    margin-right: 4%;
+}
+#logo a img{
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 125px;
+}
+#navi{ 
+    flex-grow: 1;
+    display: flex;
+    margin-top: 40px;
+    
+}
+#navi .main_navi{
+    display: flex;
+    flex-grow: 1;
+    margin-top: 15px;
+}
+#navi .main_navi a span{
+    position: relative;
+}
+#navi .main_navi a span::after{
+    content: '';
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    border-bottom: 2px solid #fff;
+    transform: scaleX(0);
+    transition: 0.2s;
+}
+#navi .main_navi li:hover a span::after{
+    transform: scaleX(1);
+}
+
+#navi .main_navi > li{
+    width: 13%;
+    position: relative;
+}
+#navi .main_navi > li > a{
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    width: 100%; 
+    text-shadow: 1px -1px 5px rgba(0, 0, 0, 0.388);
+}
+
+
+
+
+/* 서브메뉴 스타일 */
+#navi .sub_navi{
+    position: absolute;  /* 메인 콘텐츠와 겹칠 수 있게 */
+    z-index: 100;
+    display: none; 
+    height: 245px;
+    top: 40px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+
+#navi .sub_navi ul{
+    padding-top: 10px;
+}
+
+#navi .sub_navi ul li a{
+    font-size: 16px;
+    display: block;
+    line-height: 35px;
+    color: #fff;
+    text-shadow: 1px -1px 5px #00000063;
+}
+#navi .sub_navi ul li:hover a{
+    
+}
+
+
+/* 로그인, 회원가입 */
+#log_navi{
+    border: 3px solid #fff;
+    border-radius: 50px;
+    transform: translate(-40px, 10px);
+}
+#log_navi ul{
+    display: flex;
+    margin-top: 10px;
+}
+#log_navi ul span{
+    color: #fff;
+    font-weight: bold;
+}
+#log_navi ul li{
+}
+#log_navi ul li a{
+    font-size: 13px;
+    padding: 7px 15px;
+    color: #fff;
+    text-shadow: 1px -1px 5px #00000063;
+}
+
+
+/* 메뉴 100% 배경 스타일 */
+#navi_bg{
+    position: absolute;
+    height: 350px;
+    background: #0000009a;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    display: none;
+}
+#mb_top_btn{
+    display: none;
+}
+
+
+#mb_navi_bg{ 
+    position: fixed;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1000;
+}
+
+#mb_navi{
+    position: fixed;
+    z-index: 1001;
+    right: -100%;/* 안보이게 -100% */
+    top: 0;
+    background: #fff;
+    width: 70%;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+}
+
+
+/* footer */
+#footer_wrap{
+    text-align: center;
+}
+#foot_group{
+    background: url(../img/footer_bg.png) no-repeat center / cover;
+}
+#foot_group{
+    height: 300px;
+    text-align: center;
+}
+#foot_group .row_c{
+    display: flex;
+}
+
+div#foot_text {
+    width: 100%;
+}
+div#foot_logo {
+    margin-bottom: 12px;
+}
+.foot_bottom {
+    margin-bottom: 50px;
+}
+.foot_top ul{
+    display: flex;
+    justify-content: center;
+    margin: 35px 0 30px;
+}
+.foot_top ul li a{
+    margin: 20px;
+    font-size: 16px;
+    color: #959595;
+}
+.foot_top ul li a:hover{
+    color: #fff;
+}
+
+#foot_logo img{
+    margin-top: 20px;
+    width: 220px;
+}
+.foot_bottom ul{
+    font-size: 13px;
+    color: #959595;
+}
+.foot_copy{
+    font-size: 13px;
+    margin: 0 20px;
+    color: #959595;
+}
+#mb_foot_bottom{
+    display: none;
+}
+
+
+
+@media screen and (max-width:1200px){
+    
+    /* 헤더 */
+    #navi_wrap{
+        display: block;
+        height: 80px;
+    }
+    #navi{
+        display: none;
+    }
+   
+    #logo{
+        text-align: center;
+        margin-right: 0;
+    }
+    #logo a img{
+        width: 120px;
+        margin-top: 13px;
+    }
+
+    #mb_top_btn{
+        position: absolute;
+        top: 21px;
+        right: 10px;
+        display: block;
+    }
+    #mb_top_btn #menu a span{
+        font-size: 35px;
+        color: #fff;
+    }
+
+    /* 모바일 메뉴 ................... */
+    
+    .mb_navi_wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .mb_navi_wrap .main_navi{
+        order: 2;
+    }
+    .mb_navi_wrap .main_navi > li > a{
+        display: block;
+        padding-left: 40px;
+        height: 50px;
+        line-height: 50px;
+        color: #000;
+        background: #fff;
+        font-size: 1.3em;
+        font-weight: bold;
+        position: relative;
+    }
+    .mb_navi_wrap .main_navi > li > a .arrow{
+        position: absolute;
+        right: 10px;
+        top: 0px;
+    }
+    .mb_navi_wrap .main_navi > li > a.active .arrow{
+        transform: rotateX(180deg);
+    }
+    .mb_navi_wrap .main_navi > li > .sub_navi{
+        display: none;
+    }
+    .mb_navi_wrap .main_navi > li > .sub_navi ul {
+        padding: 20px 0;
+        background: #eee;
+    }
+    .mb_navi_wrap .main_navi > li > .sub_navi ul li{
+        
+        line-height: 25px;
+        
+    }
+    .mb_navi_wrap .main_navi > li > .sub_navi ul li a{
+        display: block;
+        padding-left: 40px;
+        font-size: 15px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+  
+
+    /* 닫기 버튼 */
+    .mb_close{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+    }
+    .mb_close span{
+        color: #fff;
+        font-size: 40px;
+    }
+
+    /*  로그인, 회원가입 */
+    .mb_navi_wrap #log_navi ul{
+        padding: 20px;
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #log_navi ul li a{
+        color: #000;
+        text-shadow: none;
+    }
+    #log_navi{
+        transform: translate(2px, -1px);
+    }
+    
+
+
+  
+    /* footer */
+    .foot_top ul{
+        flex-wrap: wrap;
+    }
+    #mb_foot_bottom{
+        display: block;
+        margin: 0 20px;
+        font-size: 13px;
+    }
+    
+    #foot_award, #foot_logo, .foot_bottom{
+        display: none;
+    }
+    #foot_group {
+        height: 250px;
+    }
+}/* 0-1000 */
+
+@media screen and (max-width:600px){
+    #logo a img{
+        width: 100px;
+        margin-top: 18px;
+    }
+    .foot_top ul{
+        justify-content: center;
+    }
+    .foot_top ul li a {
+        margin: 13px;
+        font-size: 13px;
+        color: #959595;
+    }
+    #foot_group {
+        height: 190px;
+    }
+}

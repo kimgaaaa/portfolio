@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> chickenmaru sub05 - board </title>
+    <!-- 자바스크립트 라이브러리인 jQuery 불러오기 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="http://gggaeun.dothome.co.kr/chicken_maru/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="http://gggaeun.dothome.co.kr/chicken_maru/js/navi.js"></script>
+    
+    <script>
+        //JQuery 시작
+        $(function(){
+
+        }); //JQuery 종료
+    </script>
+    <link rel="stylesheet" href="dist/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="http://gggaeun.dothome.co.kr/chicken_maru/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="http://gggaeun.dothome.co.kr/chicken_maru/css/reset.css">
+    <link rel="stylesheet" href="http://gggaeun.dothome.co.kr/chicken_maru/css/common.css">
+    <link rel="stylesheet" href="http://gggaeun.dothome.co.kr/chicken_maru/css/sub_common.css">
+    <link rel="stylesheet" href="http://gggaeun.dothome.co.kr/chicken_maru/css/sub05.css">
+
+    <!-- 구글폰트 아이콘 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- 아이폰 홈화면 아이콘 추가 -->
+    <link rel="apple-touch-]icon-precomposed" href="http://gggaeun.dothome.co.kr/chicken_maru/img/ch_maru_favicon.png">
+ 
+    <!-- chrome, safari, ms-edge -->
+    <link rel="shortcut icon" href="http://gggaeun.dothome.co.kr/chicken_maru/img/ch_maru_favicon.png">
+</head>
+<body>
+<? include "header.html" ?>
+
+<!-- content -->
+    <div id="sub_wrap">
+        <div id="sub_title">
+            <div id="sub_c">
+                <h2>커뮤니티</h2>
+            </div><!-- sub_c -->
+        </div><!-- sub_title -->
+        <div class="row_c">
+            <div id="sub_menu">
+                <ul>
+                    <li class="on"><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">마루홍보실</a></li>
+                    <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">메뉴레시피</a></li>
+                    <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">고객의소리</a></li>
+                    <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">매장칭찬하기</a></li>
+                </ul>
+            </div><!-- sub_menu -->
+
+           <div class="mb_sub_menu">
+            <div class="swiper sw1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide on"><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">마루홍보실</a></div>
+                    <div class="swiper-slide"><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">메뉴레시피</a></div>
+                    <div class="swiper-slide"><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">고객의소리</a></div>
+                    <div class="swiper-slide"><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">매장칭찬하기</a></div>
+                </div>
+
+            </div>    
+           </div><!-- mb_sub_menu -->
+            
+    
+        <div id="sub_s_c" class="row_c">
+            <header>
+                <h2>마루홍보실</h2>
+            </header>
+            <div id="bd_wrap">
+                <!-- 게시판 삽입 -->
+                 {$content}
+            </div><!-- bd_wrap -->
+
+        </div><!-- sub_s_c -->
+       </div>
+    </div><!-- sub_wrap -->
+
+<? include "footer.html" ?>
+
+
+<!-- Swiper JS -->
+<script src="http://gggaeun.dothome.co.kr/chicken_maru/dist/js/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper1 = new Swiper('.sw1', {
+      spaceBetween: 0,
+      loop: false, 
+      grabCursor:true,
+      slidesPerView:'auto',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true, //블릿버튼 제어
+      },
+     
+      
+    });
+
+    var cnt = 1;
+    $('.mb_sub_menu .swiper-slide').click(function(){
+        $('.mb_sub_menu .swiper-slide').removeClass('on');
+        $(this).addClass('on');
+        cnt = $(this).index();
+        $('#sub_menu ul li').removeClass('on');
+        $('#sub_menu ul li').eq(cnt).addClass('on');
+        return false;
+    });
+    $('#sub_menu ul li').click(function(){
+        $('#sub_menu ul li').removeClass('on');
+        $(this).addClass('on');
+        cnt = $(this).index();
+        $('.mb_sub_menu .swiper-slide').removeClass('on');
+        $('.mb_sub_menu .swiper-slide').eq(cnt).addClass('on');
+        return false;
+    });
+</script>
+
+</body>
+</html>

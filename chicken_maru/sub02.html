@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> chickenmaru sub02 </title>
+    <!-- 자바스크립트 라이브러리인 jQuery 불러오기 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/navi.js"></script>
+    
+    <script>
+        //JQuery 시작
+        $(function(){
+            var pt1 = $('#pt_1').offset().top - 700;
+
+//화면 스크롤 시 해당 콘텐츠 메뉴 활성화 및 go_top 버튼 보여주기
+            $(window).scroll(function(){
+                var st = $(this).scrollTop();
+
+                if(st > pt1){ //go_top 200 위치보다 scrollTop 값이 큰 경우 go_top 버튼 보임
+                    $('#pt_1').addClass('active');
+                }
+            });
+        }); //JQuery 종료
+    </script>
+    <link rel="stylesheet" href="dist/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_common.css">
+    <link rel="stylesheet" href="css/sub02.css">
+
+    <!-- 구글폰트 아이콘 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- 아이폰 홈화면 아이콘 추가 -->
+    <link rel="apple-touch-icon-precomposed" href="img/ch_maru_favicon.png">
+ 
+    <!-- chrome, safari, ms-edge -->
+    <link rel="shortcut icon" href="img/ch_maru_favicon.png">
+</head>
+<body>
+    <? include "header.html" ?>
+<!-- content -->
+    <div id="sub_wrap">
+        <div id="sub_title">
+            <div id="sub_c">
+                <h2>치킨마루</h2>
+            </div><!-- sub_c -->
+        </div><!-- sub_title -->
+        <div>
+            <div id="sub_menu">
+                <ul>
+                    <li class="on"><a href="sub02.html">브랜드 소개</a></li>
+                    <li><a href="sub02.html">연혁</a></li>
+                    <li><a href="sub02.html">비전</a></li>
+                    <li><a href="sub02.html">사업제안 및 제휴</a></li>
+                    <li><a href="sub02.html">인재채용</a></li>
+                    <li><a href="sub02.html">찾아오시는 길</a></li>
+                </ul>
+            </div><!-- sub_menu -->
+
+           <div class="mb_sub_menu">
+            <div class="swiper sw1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide on"><a href="sub02.html">브랜드 소개</a></div>
+                    <div class="swiper-slide"><a href="sub02.html">연혁</a></div>
+                    <div class="swiper-slide"><a href="sub02.html">비전</a></div>
+                    <div class="swiper-slide"><a href="sub02.html">사업제안 및 제휴</a></div>
+                    <div class="swiper-slide"><a href="sub02.html">인재채용</a></div>
+                    <div class="swiper-slide"><a href="sub02.html">찾아오시는 길</a></div>
+                </div>
+            </div>    
+           </div><!-- mb_sub_menu -->
+            
+           <div id="sub_s_c">
+                <div id="pt_1">
+                    <div class="row_c2">
+                        <img src="img/sub02/logo.png" alt="치킨마루 로고">
+                        <p>치킨마루는 무항생제 인증 원료육으로 만든 건강한 치킨입니다.</p> <p>최고로 엄선된 재료로 고객님의 맛과 건강까지 책임집니다.</p>
+                        
+                        <div id="pt_2" class="row_c">
+                            <div>
+                                <figure>
+                                    <img src="img/sub02/image_02.jpg" alt="무항생제">
+                                </figure>
+                                <figure>
+                                    <img src="img/sub02/image_03.jpg" alt="해썹">
+                                </figure>                         
+                            </div>
+                            <p>대한민국 최고시설에서 도계한 무항생제 인증 원료육,</p><p>바삭바삭한 식감을 위한 전용파우더,</p><p>매일매일 교체되는깨끗한 기름으로 만든 치킨마루를 만나보세요!</p><p>최고의 품질과 가격으로 고객님을 맞이합니다.</p>
+                        </div><!-- pt_2 -->
+                    </div><!-- row_c -->
+                    
+                </div><!-- pt_1 -->
+
+
+                <div id="pt_3" class="row_c">
+                    <div>
+                        <h1><span>BRAND</span> <span>SLOGAN</span></h1>
+                        <div>
+                            <p><strong>맛</strong>과 <strong>건강</strong>까지 챙기는</p> <p><strong>행복기업</strong></p>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <img src="img/sub02/slog_01.png" alt="착한가격">
+                                <p>계산하며 살지말자! 우리는 치킨마루다!</p><p>착한가격에 매일 즐길 수 있는 치킨!</p><p>저렴한 가격에 만나는 명품치킨을 확인해보세요.</p>
+                            </li>
+                            <li>
+                                <img src="img/sub02/slog_02.png" alt="무항생제 원료육">
+                                <p>무항생제 인증 원료육을 사용,</p><p>맛과 건강을 동시에!</p><p>비교불가한 치킨마루를 만나보세요</p>
+                            </li>
+                            <li>
+                                <img src="img/sub02/slog_03.png" alt="깨끗한 기름">
+                                <p>최고로 엄선된 원ㆍ부자재!</p><p>매일매일 교체되는 깨끗한 기름!</p><p>믿고 먹을 수 있는 오픈주방 시스템!</p><p>믿을 수 있는 치킨, 치킨마루와 함께 하세요.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- pt_3 -->
+           </div><!-- sub_s_c -->
+            
+            
+
+
+       </div>
+    </div><!-- sub_wrap -->
+    <? include "footer.html" ?>
+
+<!-- Swiper JS -->
+<script src="dist/js/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper1 = new Swiper('.sw1', {
+      spaceBetween: 0,
+      loop: false, 
+      grabCursor:true,
+      slidesPerView:'auto',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true, //블릿버튼 제어
+      },
+     
+      
+    });
+
+    var cnt = 1;
+    $('.mb_sub_menu .swiper-slide').click(function(){
+        $('.mb_sub_menu .swiper-slide').removeClass('on');
+        $(this).addClass('on');
+        cnt = $(this).index();
+        $('#sub_menu ul li').removeClass('on');
+        $('#sub_menu ul li').eq(cnt).addClass('on');
+        return false;
+    });
+    $('#sub_menu ul li').click(function(){
+        $('#sub_menu ul li').removeClass('on');
+        $(this).addClass('on');
+        cnt = $(this).index();
+        $('.mb_sub_menu .swiper-slide').removeClass('on');
+        $('.mb_sub_menu .swiper-slide').eq(cnt).addClass('on');
+        return false;
+    });
+</script>
+
+</body>
+</html>

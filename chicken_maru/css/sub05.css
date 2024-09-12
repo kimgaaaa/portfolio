@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+#sub_title{
+    background: url(../img/sub05/banner.png) no-repeat center / cover;
+}
+#sub_menu, .mb_sub_menu{
+    max-width: 600px;
+}
+
+#bd_wrap{
+    
+    min-height: 500px;
+}
+#sub_s_c header h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+
+@media screen and (max-width:768px){   
+    #sub_s_t h2{
+        font-size: 1.3em;
+        padding: 0;
+    }
+    #sub_s_t span{
+        font-size: 14px;
+    }
+   
+    #sub_s_c h2{
+        padding-left: 10px;
+    }
+    #bd_wrap{
+        min-height: 250px;
+        padding: 0 10px;
+    }
+    .hx h2, .hx h3{
+        font-size: 21px;
+    }
+    .sh select {
+        width: 95px;
+        height: 31px;
+    }
+} /* 0 ~ 768 */

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> artisee </title>
+    <!-- 자바스크립트 라이브러리인 jQuery 불러오기 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/navi.js"></script>
+    
+    <script>
+        //JQuery 시작
+        $(function(){
+            //화면 스크롤 시 해당 콘텐츠 메뉴 활성화 및 go_top 버튼 보여주기
+            $(window).scroll(function(){
+                    var st = $(this).scrollTop();
+
+                     //pt_1 각 콘텐츠 위치에 도달 시 해당 메뉴 활성화
+                    $('#pt2_01_img, #pt2_02_img').each(function(){
+                        var i = $(this).index();
+
+                        if($(this).offset().top-600 <= st){
+                            //$('#sub_s_c > div').removeClass('active');
+                            $(this).addClass('active');
+                        }
+                    });                        
+                }); //end scroll
+        }); //JQuery 종료
+    </script>
+    <link rel="stylesheet" href="dist/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- 구글폰트 아이콘 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- 구글폰트2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+
+     <!-- 아이폰 홈화면 아이콘 추가 -->
+     <link rel="apple-touch-icon-precomposed" href="img/ch_maru_favicon.png">
+ 
+     <!-- chrome, safari, ms-edge -->
+     <link rel="shortcut icon" href="img/ch_maru_favicon.png">
+</head>
+<body>
+    <header id="gnb">
+        <div id="navi_wrap" class="row_c">
+            <div id="logo"><a href="main.html"><img src="img/logo_white.png" alt="아티제"></a></div>
+
+            <!-- 모바일 헤더 -->
+             <div id="mb_top_btn">
+                <div id="menu">
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </a>
+                </div>
+             </div>
+             <!-- 모바일 네비게이션 어두운 배경, 닫기 버튼 -->
+            <div id="mb_navi_bg">
+                <div class="mb_close">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </div>
+            </div>
+            
+             <!-- 모바일 네비게이션 복사 영역 -->
+            <div id="mb_navi">
+                <nav class="mb_navi_wrap">
+                    <!-- pc:#navi => mobile navi copy : .mb_navi_wrap 안의 ul -->
+                </nav>
+            </div>
+
+            <nav id="navi">
+                <ul class="main_navi">
+                    <li><!-- 1 -->
+                        <a href="#"><span>menu</span></a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="sub01.html">베이커리</a></li>
+                                <li><a href="sub01.html">음료</a></li>
+                                <li><a href="sub01.html">디저트</a></li>
+                                <li><a href="sub01.html">푸드</a></li>
+                                <li><a href="sub01.html">상품</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><!-- 2 -->
+                        <a href="#"><span>the story</span></a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="sub02.html">브랜드 스토리</a></li>
+                                <li><a href="sub02.html">커피 스토리</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><!-- 3 -->
+                        <a href="#"><span>store</span></a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="sub03.html">매장찾기</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><!-- 4 -->
+                        <a href="#"><span>gift shop</span></a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="sub04.html">선물하기</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><!-- 5 -->
+                        <a href="#"><span>news</span></a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">새메뉴</a></li>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">이벤트</a></li>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">공지사항</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><!-- 6 -->
+                        <a href="#"><span>club artisee</span></a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">멤버십 안내</a></li>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">마이 아티제</a></li>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">마이 페이지</a></li>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">자주 묻는 질문</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><!-- 7 -->
+                        <a href="#"><span>contact</span></a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">단체 및 기업구매</a></li>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">신규입점제의</a></li>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">고객의 소리</a></li>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">입사지원</a></li>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">카카오톡 상담톡</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+                <div id="log_navi">
+                    <ul>
+                        <li>
+                            <a href="sub_login.html">login</a>
+                        </li>
+                        <span> / </span>
+                        <li>
+                            <a href="sub_login.html">join</a>
+                        </li>
+                    </ul>
+                </div><!-- log_navi -->
+            </nav>
+            
+        </div><!-- navi_wrap -->
+            
+    </header>
+    <div id="navi_bg">
+    </div>
+
+    <div id="wrap">    
+        <div id="pt1" class="swiper">
+            <div class="swiper-wrapper">           
+                <div class="swiper-slide pt1_1">
+                    <div id="main_t">
+                        <p><strong>아티제</strong>는 자유로움과 편안함, 삶의 여유를 추구하는 이들에게</p>
+                        <p>감성과 휴식을 선사하는 라이프 스타일 카페입니다.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide pt1_2">
+                    <div id="main_t">
+                        <p><strong>아티제</strong>는 프랑스어로 장인을 의미하는 'artisan'과</p>
+                        <p>여성적 이미지를 강조하는 'ee'를 결합한 이름으로</p>
+                        <p>장인 정신을 바탕으로 부드럽고 섬세한 맛을 제공하겠다는</p>
+                        <p>의지를 담고 있는 공간입니다.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div><!-- pt1 -->
+        
+        <div id="pt2">
+            <div id="pt2_01">
+                <div id="pt2_01_txt">
+                    <h2>Cake</h2>
+                    <strong>정성이 필요한 순간, 아티제 케이크와 함께 하세요.</strong>
+                    <p>아티제 케이크는 엄선된 최고의 재료만을 사용합니다.</p>
+                    <p>특히 신선한 1등급 우유로 만든 생크림을 사용하여</p>
+                    <p>훨씬 부드럽고 깔끔한 맛을 느낄 수 있습니다.</p>
+                </div>
+                <div id="pt2_01_img">
+                    <img src="img/pt2_01.png" alt="케이크">
+                </div>
+            </div>
+
+            <div id="pt2_02">
+                <div id="pt2_02_img">
+                    <img src="img/pt2_02.png" alt="커피">
+                </div>
+
+                <div id="pt2_02_txt">
+                    <h2>Coffee</h2>
+                    <strong>아티제 바리스타가 직접 선택한 블렌드</strong>
+                    <p>수십가지 블렌드 후보  중 아티제 바리스타들이 직접 선택한</p>
+                    <p>아티제 시그니처 블렌드는 살구의 은은한 산미와</p>
+                    <p>견과류의 고소함이 느껴지는 부드럽고 깔끔한 블렌드로</p>
+                    <p>모두 스페셜티 커피만을 사용하여 황홀한 맛과 향이 어우러져 피어납니다. </p>
+                </div>
+            </div>
+            
+        </div><!-- pt2 -->
+
+        <div id="pt3">
+            <div id="pt3_title">
+                <h2>Menu</h2>
+                <strong>아티제의 다양한 메뉴를 둘러보세요</strong>
+                <a href="#">more</a>
+            </div>
+            <div id="slide_cl">
+                <div class="swiper client">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/pt3_01.png" alt="image_01"></div>
+                        <div class="swiper-slide"><img src="img/pt3_02.png" alt="image_02"></div>
+                        <div class="swiper-slide"><img src="img/pt3_03.png" alt="image_03"></div>
+                        <div class="swiper-slide"><img src="img/pt3_04.png" alt="image_04"></div>
+                        <div class="swiper-slide"><img src="img/pt3_05.png" alt="image_05"></div>
+                        <div class="swiper-slide"><img src="img/pt3_06.png" alt="image_06"></div>
+                        <div class="swiper-slide"><img src="img/pt3_07.png" alt="image_07"></div>
+                        <div class="swiper-slide"><img src="img/pt3_08.png" alt="image_08"></div>
+                        <div class="swiper-slide"><img src="img/pt3_09.png" alt="image_09"></div>
+                        <div class="swiper-slide"><img src="img/pt3_10.png" alt="image_10"></div>
+                    </div><!-- swiper-wrappe -->
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div><!-- swiper -->
+            </div>
+        </div><!-- pt3 -->
+
+        <div id="pt4">
+            <div>
+                <h2>Gift shop</h2>
+                <strong>지금 당신의 가장 소중한 이에게 아티제를 선물하세요!</strong>
+                <a href="#">아티제 기프트샵</a>
+            </div>
+        </div>
+
+        <div id="pt5">
+            <div id="pt5_title">
+                <h2>Instagram</h2>
+                <strong><a href="#">@cafeartisee</a></strong>
+            </div>
+            <div id="pt5_img" class="row_c">
+                <ul>
+                    <li><a href="#"><img src="img/pt5_01.jpg" alt="사진1"></a></li>
+                    <li><a href="#"><img src="img/pt5_02.jpg" alt="사진2"></a></li>
+                    <li><a href="#"><img src="img/pt5_03.jpg" alt="사진3"></a></li>
+                    <li><a href="#"><img src="img/pt5_04.jpg" alt="사진4"></a></li>
+                    <li><a href="#"><img src="img/pt5_05.jpg" alt="사진5"></a></li>
+                    <li><a href="#"><img src="img/pt5_06.jpg" alt="사진6"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- wrap -->
+        
+
+    <footer>
+        <div id="footer_wrap">
+            
+            <div id="foot_group">
+                <div class="row_c">
+                
+                    <div id="foot_text">
+                        <div class="foot_top">
+                            <ul>
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">클럽아티제이용약관</a></li>
+                                <li><a href="#">이메일무단수집거부</a></li>
+                                <li><a href="#">영상처리기기운영 · 관리방침</a></li>
+                                <li><a href="#">경영공시</a></li>
+                                <li><a href="#">윤리경영</a></li>
+                            </ul>
+                        </div><!-- foot_top -->
+                        <div id="foot_logo">
+                            <img src="img/footer.png" alt="a piece of art, artisee">
+                        </div>
+                        <div class="foot_bottom">
+                            <ul>
+                                <li>㈜보나비 대표이사 이종민 · 서울시 강남구 테헤란로28길 32</li>
+                                <li>사업자등록번호 220-87-92541 · 대표번호 02-2155-5777</li> 
+                            </ul>
+                        </div><!-- foot_bottom -->
+                        <div class="foot_copy">
+                            2019 cafe artisée, all rights reserved
+                        </div>
+                    </div><!-- foot_text -->
+                </div>
+            </div><!-- foot_group -->
+            
+        </div>
+    </footer>
+
+    <script src="dist/js/swiper-bundle.min.js"></script>
+    <script>
+
+    var swiper1 = new Swiper('#pt1', {
+      spaceBetween: 0,
+      loop: true, 
+      slidesPerView: 1,
+      speed: 3000,
+      autoplay: {
+        delay: 4000, // 초마다 슬라이드
+        disableOnInteraction: true, //버튼 제어시 멈춤
+      },
+      pagination: {
+        el: '#pt1 .swiper-pagination',
+        type: 'progressbar'
+      },
+
+    });
+
+    var swiper2 = new Swiper('.client', {
+      spaceBetween: 0,
+      loop: true, 
+      slidesPerView: 0,
+      speed: 4000,
+      loopAdditionalSlides: 1,
+      autoplay: {
+        delay: 0, // 초마다 슬라이드
+        disableOnInteraction: false, //버튼 제어시 멈춤
+      },
+
+      breakpoints:{
+        1400:{
+            slidesPerView:6,
+            centeredSlides:true,
+        },
+        1000:{
+            slidesPerView:5,
+            centeredSlides:true,
+        },
+        768:{
+            slidesPerView:3,
+            centeredSlides:false,
+        },
+        520:{
+            slidesPerView:2,
+            centeredSlides:false,
+        },
+        320:{
+            slidesPerView:2,
+            centeredSlides:false,
+        }
+      }
+
+
+    });
+    </script>
+
+</body>
+</html>

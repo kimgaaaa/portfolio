@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 1004 </title>
+    <!-- 자바스크립트 라이브러리인 jQuery 불러오기 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/navi.js"></script>
+    
+    <script>
+        //JQuery 시작
+        $(function(){
+
+        }); //JQuery 종료
+    </script>
+    <link rel="stylesheet" href="dist/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- 구글폰트 아이콘 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+     <!-- 아이폰 홈화면 아이콘 추가 -->
+     <link rel="apple-touch-icon-precomposed" href="img/ch_maru_favicon.png">
+ 
+     <!-- chrome, safari, ms-edge -->
+     <link rel="shortcut icon" href="img/ch_maru_favicon.png">
+</head>
+<body>
+    <header id="gnb">
+        <div id="navi_wrap" class="row_c">
+            <div id="logo"><a href="main.html"><img src="img/main/logo-white.png" alt="천사"></a></div>
+
+            <!-- 모바일 헤더 -->
+             <div id="mb_top_btn">
+                <div id="menu">
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </a>
+                </div>
+             </div>
+             <!-- 모바일 네비게이션 어두운 배경, 닫기 버튼 -->
+            <div id="mb_navi_bg">
+                <div class="mb_close">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </div>
+            </div>
+            
+             <!-- 모바일 네비게이션 복사 영역 -->
+            <div id="mb_navi">
+                <nav class="mb_navi_wrap">
+                    <!-- pc:#navi => mobile navi copy : .mb_navi_wrap 안의 ul -->
+                </nav>
+            </div>
+
+            <nav id="navi">
+                <ul class="main_navi">
+                    <li><!-- 1 -->
+                        <a href="#">전국천사소개</a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="sub01.html">전국천사란</a></li>
+                                <li><a href="sub01.html">인사말</a></li>
+                                <li><a href="sub01.html">연혁</a></li>
+                                <li><a href="sub01.html">조직도</a></li>
+                                <li><a href="sub01.html">홍보대사</a></li>
+                                <li><a href="sub01.html">홍보영상</a></li>
+                                <li><a href="sub01.html">운영진</a></li>
+                                <li><a href="sub01.html">알뜰살림</a></li>
+                                <li><a href="sub01.html">찾아오시는 길</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><!-- 2 -->
+                        <a href="#">사업소개</a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="sub02.html">독거노인 무료급식</a></li>
+                                <li><a href="sub02.html">사랑의도시락 배달</a></li>
+                                <li><a href="sub02.html">합동생일파티</a></li>
+                                <li><a href="sub02.html">효도관광</a></li>
+                                <li><a href="sub02.html">국내아동지원센터</a></li>
+                                <li><a href="sub02.html">해외무료급식</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><!-- 3 -->
+                        <a href="#">후원하기</a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="sub03.html">후원안내</a></li>
+                                <li><a href="sub03.html">후원참여</a></li>
+                                <li><a href="sub03.html">후원정보</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><!-- 4 -->
+                        <a href="#">선행활동참여</a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="sub04.html">선행활동참여</a></li>
+                                <li><a href="sub04.html">선행이야기</a></li>
+                                <li><a href="sub04.html">물품후원소식</a></li>
+                                <li><a href="sub04.html">자원봉사신청</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><!-- 5 -->
+                        <a href="#">천사자료실</a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">언론보도자료</a></li>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">공지사항</a></li>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">Q&A</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><!-- 6 -->
+                        <a href="#">캠페인</a>
+                        <nav class="sub_navi">
+                            <ul>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">천사&칼럼</a></li>
+                                <li><a href="http://gggaeun.dothome.co.kr/xe/sub_05_board">천사나눔인증가게</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+                <div id="btn_dona">
+                    <ul>
+                        <li>
+                            <a href="sub_login.html">후원하기</a>
+                        </li>
+                    </ul>
+                </div><!-- btn_dona -->
+            </nav>
+            
+        </div><!-- navi_wrap -->
+        <div id="navi_bg">
+        </div>    
+    </header>
+
+<!-- content -->
+    <div class="h_video">
+        <video src="img/main/main_video.mp4" autoplay muted playsinline></video>
+    </div>
+
+    <div id="pt_2">
+        <div class="w_cicle">
+            <img src="img/main/pt2_Ellipse.png" alt="원 배경">
+        </div>
+        <div id="dona_txt" class="row_c">
+            <h2><strong>나눔</strong>의 기적</h2>
+            <p>하루 단돈 500원이면 독거노인 분들의</p>
+            <p>눈물을 닦아드릴 수 있습니다.</p>
+        </div>
+        <div id="dona_btn" class="row_c">
+            <ul id="btn">
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="img/main/dona_btn01.png" alt="정기후원">
+                        </figure>
+                        <span>정기후원</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="img/main/dona_btn02.png" alt="일시후원">
+                        </figure>
+                        <span> 일시후원</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="dona_b_btn">
+                <a href="#">
+                    <img src="img/main/arrow.png" alt="후원안내">
+                    후원안내
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="pt_3">
+        <ul>
+            <li>
+                <!-- <figure>
+                    <img src="img/main/pt_3_img01.png" alt="배식받는 이미지">
+                </figure> -->
+                <h2><p><strong>사랑</strong>을 나누면 <strong></p><p>기쁨</strong>이 두배가 됩니다</p></h2>
+                <span>어르신들께 한끼 식사를 대접해 드리고 함께 사랑과 기쁨을 누려요</span>
+            </li>
+        </ul>
+        
+    </div>
+
+    <div id="pt_4">
+        <div>
+            <div class="title">
+                <h2><strong>천사</strong>&<strong>칼럼</strong></h2>
+            </div>
+            <div class="more_btn">
+                <a href="#">
+                   <img src="img/main/arrow.png" alt="더보기">
+                더보기</a> 
+            </div>
+        </div>   
+
+        <div id="slide">
+            <div class="swiper sw1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/main/pt_4_img01.png" alt="image_01"></div>
+                    <div class="swiper-slide"><img src="img/main/pt_4_img02.png" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt_4_img03.png" alt="image_03"></div>
+                    <div class="swiper-slide"><img src="img/main/pt_4_img04.JPG" alt="image_04"></div>
+                    <div class="swiper-slide"><img src="img/main/pt_4_img05.JPG" alt="image_05"></div>
+                    <div class="swiper-slide"><img src="img/main/pt_4_img06.JPG" alt="image_01"></div>
+                    <div class="swiper-slide"><img src="img/main/pt_4_img07.jpg" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt_4_img08.jpg" alt="image_03"></div>
+                </div><!-- swiper-wrappe -->
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div><!-- swiper sw1 -->
+        </div>
+    </div>
+
+
+    <div id="pt_5" class="row_c">
+        <div class="title">
+                <h2><strong>천사</strong> 홍보대사</h2>
+        </div>
+
+        <ul>
+            <li>
+                <img src="img/main/pt_5_amb01.jpg" alt="탤런트 박소현">
+                <span>탤런트 <strong>박소현</strong></span>
+            </li>
+            <li>
+                <img src="img/main/pt_5_amb02.jpg" alt="가수 김장훈">
+                <span>가수  <strong>김장훈</strong></span>
+            </li>
+            <li>
+                <img src="img/main/pt_5_amb03.jpg" alt="가수 진성">
+                <span>가수  <strong>진성</strong></span>
+            </li>
+        </ul>
+    </div>
+
+
+    <div id="pt_6" class="row_c"> 
+        <div class="title">
+            <h2><strong>천사</strong>후원</h2>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="img/main/pt6_1.png" alt="후원안내">
+                        <p>후원안내</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="img/main/pt6_2.png" alt="자원봉사신청">
+                        <p>자원봉사</p>
+                        <p>신청</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="img/main/pt6_3.png" alt="후원자정보">
+                        <p>후원자</p>
+                        <p>정보</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="img/main/pt6_4.png" alt="기부금영수증">
+                        <p>기부금</p>
+                        <p>영수증</p>
+                    </div>
+                </a>
+            </li>
+        </ul>  
+    </div>
+    
+    <div id="pt_7" class="row_c">
+        <div id="slide_cl">
+            <div class="swiper client">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/main/pt7_01.jpg" alt="image_01"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_02.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_03.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_04.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_05.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_06.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_07.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_08.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_09.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_10.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_11.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_12.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_13.jpg" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_14.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_15.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_16.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_17.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_18.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_19.jfif" alt="image_02"></div>
+                    <div class="swiper-slide"><img src="img/main/pt7_20.jfif" alt="image_02"></div>
+                </div><!-- swiper-wrappe -->
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div><!-- swiper -->
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer_wrap">            
+            <div id="foot_group">
+                <div class="row_c">
+                    <div id="foot_logo">
+                        <img src="img/main/footer.png" alt="전국천사무료급식소">
+                    </div>
+                    <div id="foot_text">
+                        <div class="foot_left">
+                            <p>단체명:  사단법인 한국나눔연맹 산하 전국천사무료급식소 /  대표자: 안미란</p>
+                            <p>관리본부주소: 대구 광역시 서구 국채보상로 365 (고유번호: 503-82-13427)</p>
+                            <p>서울본부주소: 서울특별시 종로구 돈화문4길 29</p>
+                            <p>대표번호: 1811-1004  /  나눔전화: 080-527-1004</p>
+                        </div><!-- foot_left -->
+
+                                           
+                    </div><!-- foot_text -->
+                </div>
+            </div><!-- foot_group -->
+            
+        </div>
+    </footer>
+
+
+
+</body>
+<!-- Swiper JS -->
+<script src="dist/js/swiper-bundle.min.js"></script>
+<script>
+
+    var swiper1 = new Swiper('.sw1', {
+      spaceBetween: 20,
+      loop: true, 
+      grabCursor:true,
+      centeredSlides:true,
+      slidesPerView:3,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true, //블릿버튼 제어
+      },
+      breakpoints:{
+        768:{
+            slidesPerView:3,
+            centeredSlides:true,
+        },
+        502:{
+            slidesPerView:2,
+            centeredSlides:false,
+        },
+        320:{
+            slidesPerView:1,
+            centeredSlides:false,
+        }
+      }
+    });
+
+      var swiper2 = new Swiper('.client', {
+      spaceBetween: 5,
+      loop: true, 
+      slidesPerView: 6,
+      speed:4000,
+      loopAdditionalSlides: 1,
+      autoplay: {
+        delay: 0, // 4초마다 슬라이드
+        disableOnInteraction: false, //버튼 제어시 멈춤
+      },
+      
+      navigation: { //이전다음버튼 제어
+        nextEl: '.cl_next',
+        prevEl: '.cl_prev',
+      },
+      breakpoints:{
+        1400:{
+            slidesPerView:6,
+            centeredSlides:true,
+        },
+        1000:{
+            slidesPerView:5,
+            centeredSlides:true,
+        },
+        768:{
+            slidesPerView:3,
+            centeredSlides:false,
+        },
+        520:{
+            slidesPerView:2,
+            centeredSlides:false,
+        },
+        320:{
+            slidesPerView:2,
+            centeredSlides:false,
+        }
+      }
+
+
+      
+    });
+</script>
+</html>

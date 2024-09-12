@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+#sub_title{
+    background: url(../img/sub01/banner.jpg) no-repeat center / cover;
+    width: 100%;
+    height: 500px;
+    line-height: 500px;
+    position: relative;
+}
+
+
+#sub_title #sub_c h2{
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+}
+
+#sub_menu, .mb_sub_menu{
+    display: block;
+    background: #eee;
+    margin: 50px auto 70px;
+    border-radius: 50px;
+    max-width: 1100px;
+    width: 96%;
+    box-sizing: border-box;
+}
+#sub_menu ul{
+    display: flex;
+    justify-content: center;
+    padding: 0 25px; 
+}
+#sub_menu ul li{
+    flex-grow: 1;
+}
+#sub_menu ul li a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+#sub_menu ul li.on a, #sub_menu ul li:hover a{
+    color: #F39801;
+}
+.mb_sub_menu{
+    display: none;
+}
+
+
+
+/* 가상요소 */
+#sub_menu ul li{
+    position: relative;
+}
+
+#sub_menu ul li a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    height: 30px;
+    border-right: 2px solid #fff;
+}
+#sub_menu ul li:last-child a::after{
+    border-right: 0;
+}
+
+
+@media screen and (max-width:1000px){
+    #sub_title{
+        height: 300px;
+        line-height: 300px;
+    }
+    #sub_title #sub_c h2{
+        font-size: 2em;
+    }
+} /* 0 ~ 1000 */
+
+@media screen and (max-width:768px){
+    #sub_title{
+        height: 150px;
+        line-height: 150px;
+        width: 100%;
+    }
+    
+    #sub_title #sub_c h2{
+        font-size: 1.8em;
+    }
+    
+    #sub_menu ul li{
+        width: 70%;
+    }
+    .mb_sub_menu{
+        padding: 10px 20px;
+    }
+    #sub_menu{
+        display: none;
+    }
+    .mb_sub_menu{
+        display: block;
+
+    }
+    .mb_sub_menu .swiper-slide{
+        width: auto;
+        padding: 0 20px;
+    }
+    .mb_sub_menu .swiper-slide.on a{
+        color: #F39801;
+    }
+
+} /* 0 ~ 768 */

@@ -1,0 +1,606 @@
+@charset "utf-8";
+
+/* 배경 영상 */
+.h_video{
+   /* height: calc(100vh - 90px); 
+   overflow: hidden; */
+}
+.h_video video{
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+/* 두번째 파트 */
+#pt_2{
+    background: url(../img/main/pt2_bg.png) no-repeat;
+    width: 100%;
+    height: 1080px;
+}
+.pt2_wrap{
+    display: flex;
+    align-items: center;
+}
+.w_cicle{
+    position: absolute;
+    width: 60%;
+    left: 3%;
+}
+ .w_cicle img{
+    max-width: 942px;
+    width: 100%;
+}
+#pt_2 #dona_txt, #pt_2 #dona_btn{
+    position: relative;
+}
+#pt_2 #dona_txt h2{
+    font-size: 5em;
+    color: #2F2F2F;
+    margin-bottom: 13px;
+}
+#pt_2 #dona_txt strong{
+    font-size: 1.5em;
+    color: #633D3D;
+}
+#pt_2 #dona_txt p{
+    font-size: 25px;
+}
+
+#pt_2 #dona_btn #btn li{
+    margin: 20px;
+    text-align: center;
+}
+#pt_2 #dona_btn #btn li a{
+    color: #fff;
+    font-size: 35px;
+    display: block;
+    background: #FD7F71;
+    width: 350px;
+    height: 130px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pt_2 #dona_btn #btn li:hover a{
+    color: #FFF09D;
+}
+#pt_2 #dona_btn #btn li a figure img{
+    vertical-align: top;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+#pt_2 #dona_btn #btn li:nth-child(2) a figure img{
+    margin-top: 11px;
+}
+.dona_b_btn{
+    margin-left: 20px;
+    width: 150px;
+}
+.dona_b_btn > a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding-left: 15px;
+}
+.dona_b_btn:hover > a{
+    font-weight: bold;
+}
+.dona_b_btn > a img{
+    margin-right: 8px;
+}
+
+/* 세 번째 파트 */
+#pt_3{
+    position: relative;
+    height: 100vh;
+    background: url(../img/main/pt_3_img01.png) no-repeat fixed;
+}
+
+#pt_3 figure img{
+    width: 100%;
+}
+#pt_3 ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
+}
+#pt_3 h2{
+    
+    
+    color: #fff;
+    font-size: 70px;
+}
+#pt_3 h2 p{
+    display: inline;
+}
+#pt_3 span{
+    
+    color: #fff;
+    font-size: 50px;
+}
+#pt_3 strong{
+    font-size: 120px;
+    color: #FFF09D;
+}
+
+
+/* 네 번째 파트 */
+#pt_4{
+    
+    background: url(../img/main/pt_4_Ellipse.png) no-repeat center /contain;
+}
+#pt_4  div.cl .cl_top{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#pt_4 div.cl h2{
+    font-size: 40px;
+}
+#pt_4 div.cl h2 strong{
+    font-size: 60px;
+    color: #633D3D;
+}
+#pt_4 .more_btn{
+    padding: 45px 0 0 20px;
+}
+#pt_4 .more_btn a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+#pt_4 .more_btn:hover a{
+    font-weight: bold;
+}
+#pt_4 .more_btn a img{
+    margin-right: 8px;
+}
+#pt_4 #slide .sw1{
+    padding-bottom: 70px;
+}
+#pt_4 #slide .sw1 .swiper-wrapper .swiper-slide{
+    height: auto;
+}
+#pt_4 #slide .sw1 .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+#pt_4 #slide .sw1 .swiper-pagination-bullet-active{
+    background: #FD7F71;
+}
+
+
+/* 다섯 번째 파트 */
+#pt_5 .title{
+    text-align: center;
+    font-size: 40px;
+}
+#pt_5 .title h2 strong{
+    color: #633D3D;
+}
+#pt_5 ul{
+    display: flex;
+}
+#pt_5 ul li{
+    width: 28%;
+    margin: 30px auto;
+    text-align: center;
+}
+#pt_5 ul li img{
+    border-radius: 25px;
+    display: block;
+    width: 100%;
+}
+#pt_5 ul li span{
+    font-size: 20px;
+    background: #FD7F71;
+    color: #fff;
+    padding: 15px 0;
+    border-radius: 30px;
+    width: 160px;
+    display: inline-block;
+    transform: translateY(-50%);
+}
+
+
+/* 여섯 번째 파트 */
+#pt_6 ul{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 150px
+}
+#pt_6 ul li{
+    width: 250px;
+    margin: 0 20px;
+}
+#pt_6 ul li a{
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+#pt_6 ul li a div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #FFEDED;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+#pt_6 ul li a div img{
+    transition: 0.4s;
+}
+#pt_6 ul li a:hover div img{
+    transform: rotateY(180deg);
+}
+#pt_6 ul li a div p{
+    color: #616161;
+    font-size: 24px;
+    font-weight: 500;
+}
+#pt_6 ul li a div p:nth-of-type(1){
+    margin-top: 10px;
+}
+#pt_6 .title{
+    text-align: center;
+}
+#pt_6 .title h2{
+    font-size: 60px;
+}
+#pt_6 .title h2 strong{
+    color: #633D3D;
+}
+
+
+/* 일곱 번째 파트 */
+#pt_7{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+#pt_7 #slide_cl{
+    width: calc(100% - 100px);
+    
+}
+#pt_7 #slide_cl .client img{
+    width: 150px;
+}
+#pt_7 #slide_cl .swiper-wrapper{
+    transition-timing-function: linear;
+    align-items: center;
+}
+
+@media screen and (max-width: 1450px){
+    #pt_3 h2{
+        font-size: 45px;
+    }
+    #pt_3 strong{
+        font-size: 90px;
+    }
+    #pt_3 span{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .section, .fp-tableCell{
+        height: auto !important;
+    }
+    
+    .h_video.section{
+        padding: 0;
+    }
+    /* .h_video video{
+        object-fit: none;
+    } */
+    .pt2_wrap{
+        display: block;   
+        position: relative;    
+    }
+    .w_cicle{
+        width: 80%;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #pt_2{
+        padding: 150px 0;
+    }
+    #pt_2 #dona_txt{
+        text-align: center;
+    }
+    #pt_2 #dona_txt h2{
+        font-size: 4em;
+    }
+    
+    .dona_b_btn{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #pt_2 #dona_btn #btn li a{
+        width: 300px;
+        height: 90px;
+        font-size: 25px;
+        margin: 0 auto;
+    }
+    #pt_3{
+        padding: 250px 0;
+    }
+    #pt_3 h2{
+        font-size: 35px;
+    }
+    #pt_3 strong{
+        font-size: 60px;
+    }
+    #pt_3 span{
+        font-size: 25px;
+    }
+    #pt_4{
+        margin: 150px 0;
+    }
+    #pt_6{
+        margin: 150px 0 0;
+    }
+    #pt_6.section{
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 900px){
+    #pt_6 ul li{
+        width: 23%;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #pt_2{
+        height: 830px;
+    }
+    
+    #pt_2 #dona_txt h2{
+        font-size: 3em;
+    }
+    #pt_2 #dona_btn #btn li a{
+        width: 237px;
+        height: 78px;
+        font-size: 21px;
+    }
+    #pt_2 #dona_txt p {
+        font-size: 20px;
+    }
+    #pt_3{
+        height: 300px;
+        width: 100%;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    #pt_3 ul{
+        right: auto;
+        width: 100%;
+        text-align: center;
+    }
+    #pt_3 h2{
+        font-size: 28px;
+    }
+    #pt_3 strong{
+        font-size: 43px;
+    }
+    #pt_3 span{
+        font-size: 17px;
+    }
+
+    #pt_4 {
+        padding: 130px 0;
+    }
+
+    #pt_5 ul li span{
+        font-size: 16px;
+        padding: 12px 0;
+        width: 130px;
+    }
+
+    #pt_6 ul{
+        margin: 100px 0;
+    }
+
+    #pt_6 ul li a div img{
+        width: 45px;
+    }
+    #pt_6 ul li a div p{
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 650px){
+    #pt_6 ul li a div img{
+        width: 40px;
+    }
+    #pt_6 ul li a div p{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    #pt_2{
+        height: 600px;
+    }
+    
+    #pt_2 #dona_txt h2{
+        font-size: 2em;
+    }
+    #pt_2 #dona_txt p {
+        font-size: 16px;
+    }
+    #pt_2 #dona_btn #btn li {
+        margin: 10px;
+    }
+    #pt_2 #dona_btn #btn li a{
+        font-size: 18px;
+        width: 186px;
+        height: 64px;
+    }
+    #pt_2 #dona_btn #btn li a figure img{
+        width: 23px;
+    }
+    
+    
+
+    #pt_3{
+        margin: 0 0 50px;
+        padding: 160px 0;
+    }
+    #pt_3 h2{
+        font-size: 21px;
+    }
+    #pt_3 h2 p{
+        display: block;
+    }
+    #pt_3 strong{
+        font-size: 36px;
+    }
+    #pt_3 span{
+        font-size: 15px;
+        padding: 0 20px;
+        display: block;
+    }
+
+
+    #pt_4{
+        padding: 0;
+        background: none;
+    }
+
+    #pt_4 div.cl h2 {
+        font-size: 25px;
+    }
+    #pt_4 div.cl h2 strong {
+        font-size: 40px;
+    }
+    #pt_4 .more_btn {
+        padding: 25px 0 0 14px;
+    }
+    #pt_4 div.cl .cl_top{
+        margin-bottom: 10px;
+    }
+
+
+    #pt_5{
+        margin: 50px 0;
+    }
+    #pt_5 .title h2{
+        font-size: 40px;
+    }
+    #pt_5 ul li span{
+        font-size: 14px;
+        padding: 8px 0;
+        width: 110px;
+    }
+    #pt_5 ul li{
+        width: 30%;
+    }
+    #pt_6 ul{
+        flex-wrap: wrap;
+        margin: 30px auto 80px;
+        width: 90%;
+    }
+    #pt_6 ul li{
+        width: 45%;
+        margin: 0 2.5% 20px;
+
+    }
+    #pt_6 .title h2{
+        font-size: 40px;
+    }
+    
+    #pt_6 ul li a div p {
+        font-size: 22px;
+        font-weight: 500;
+    }
+    #pt_7 #slide_cl .client img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    #pt_2 {
+        height: 500px;
+        padding: 50px 0;
+    }
+    
+    #pt_2 #dona_txt h2 {
+        font-size: 25px;
+    }
+    #pt_2 #dona_txt p {
+        font-size: 14px;
+    }
+    #pt_2 #dona_btn #btn li {
+        margin: 7px;
+    }
+    #pt_2 #dona_btn #btn li a {
+        font-size: 16px;
+        width: 164px;
+        height: 52px;
+    }
+    .dona_b_btn > a{
+        font-size: 16px;
+    }
+    .dona_b_btn > a img {
+        margin-right: 6px;
+        width: 20px;
+    }
+    #pt_2 #dona_txt h2{
+        margin-bottom: 2px;
+    }
+    #pt_4 {
+        margin: 60px 0;
+    }
+    #pt_4 div h2 strong {
+        font-size: 30px;
+    }
+    #pt_4 .more_btn a{
+        font-size: 16px;
+    }
+    #pt_4 .more_btn {
+        padding: 24px 0 0 12px;
+    }
+    #pt_4 .more_btn a img {
+        margin-right: 6px;
+        width: 20px;
+    }
+
+    #pt_5 .title h2 {
+        font-size: 30px;
+    }
+    #pt_6{
+        margin: 0;
+    }
+    #pt_6 ul{
+        margin: 15px auto;
+    }
+    #pt_6 ul li a div p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    #pt_6 ul li a div p:nth-of-type(1) {
+        margin-top: 4px;
+    }
+    #pt_6 ul li a div img{
+        width: 30px;
+    }
+    #pt_6 .title h2 {
+        font-size: 30px;
+    }
+}

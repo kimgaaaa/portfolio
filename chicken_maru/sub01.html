@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> chickenmaru sub01 </title>
+    <!-- 자바스크립트 라이브러리인 jQuery 불러오기 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/navi.js"></script>
+    
+    <script>
+        //JQuery 시작
+        $(function(){
+             //화면 스크롤 시 해당 콘텐츠 메뉴 활성화 및 go_top 버튼 보여주기
+             $(window).scroll(function(){
+                    var st = $(this).scrollTop();
+
+                     //pt_1 각 콘텐츠 위치에 도달 시 해당 메뉴 활성화
+                    $('#sub_s_c').each(function(){
+                        var i = $(this).index();
+
+                        if($(this).offset().top-700 <= st){
+                            //$('#sub_s_c > div').removeClass('active');
+                            $(this).addClass('active');
+                        }
+                    });         
+
+                }); //end scroll
+        }); //JQuery 종료
+    </script>
+    <link rel="stylesheet" href="dist/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_common.css">
+    <link rel="stylesheet" href="css/sub01.css">
+
+    <!-- 구글폰트 아이콘 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- 아이폰 홈화면 아이콘 추가 -->
+    <link rel="apple-touch-icon-precomposed" href="img/ch_maru_favicon.png">
+ 
+    <!-- chrome, safari, ms-edge -->
+    <link rel="shortcut icon" href="img/ch_maru_favicon.png">
+</head>
+<body>    
+<? include "header.html" ?>
+<!-- content -->
+    <div id="sub_wrap">
+        <div id="sub_title">
+            <div id="sub_c">
+                <h2>메뉴소개</h2>
+            </div><!-- sub_c -->
+        </div><!-- sub_title -->
+        <div class="row_c">
+            <div id="sub_menu">
+                <ul>
+                    <li><a href="sub01.html">신메뉴</a></li>
+                    <li class="on"><a href="sub01.html">크리스피 치킨</a></li>
+                    <li><a href="sub01.html">현미순살 치킨</a></li>
+                    <li><a href="sub01.html">빠사칸</a></li>
+                    <li><a href="sub01.html">콤보/스틱/윙봉</a></li>
+                    <li><a href="sub01.html">스페셜 메뉴</a></li>
+                    <li><a href="sub01.html">사이드 메뉴</a></li>
+                    <li><a href="sub01.html">홀안주</a></li>
+                </ul>
+            </div><!-- sub_menu -->
+
+           <div class="mb_sub_menu">
+            <div class="swiper sw1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="sub01.html">신메뉴</a></div>
+                    <div class="swiper-slide on"><a href="sub01.html">크리스피 치킨</a></div>
+                    <div class="swiper-slide"><a href="sub01.html">현미순살 치킨</a></div>
+                    <div class="swiper-slide"><a href="sub01.html">빠사칸</a></div>
+                    <div class="swiper-slide"><a href="sub01.html">콤보/스틱/윙봉</a></div>
+                    <div class="swiper-slide"><a href="sub01.html">스페셜 메뉴</a></div>
+                    <div class="swiper-slide"><a href="sub01.html">사이드 메뉴</a></div>
+                    <div class="swiper-slide"><a href="sub01.html">홀안주</a></div>
+                </div>
+
+            </div>    
+           </div><!-- mb_sub_menu -->
+            
+    
+        <div id="sub_s_t">
+            <h2>크리스피 치킨</h2>
+            <span>170ºC에서 튀긴 고소하고 바삭한 튀김 옷과 맛있는 소스의 만남</span>
+        </div><!-- sub_s_t -->
+    
+        <div id="sub_s_c" class="row_c">
+            <ul>
+                <li><a href="#"><img src="img/sub01/menu_01.png" alt="더블링 양념"></a>
+                    <strong>더블링 양념</strong>
+                    <p>15,000원</p>
+                </li>
+                <li><a href="#"><img src="img/sub01/menu_02.png" alt="더블링 간장"></a>
+                    <strong>더블링 간장</strong>
+                    <p>15,000원</p>
+                </li>
+                <li><a href="#"><img src="img/sub01/menu_03.png" alt="크리스피"></a>
+                    <strong>크리스피</strong>
+                    <p>13,000원</p>
+                </li>
+                <li><a href="#"><img src="img/sub01/menu_04.png" alt="양념치킨"></a>
+                    <strong>양념치킨</strong>
+                    <p>15,000원</p>
+                </li>
+                <li><a href="#"><img src="img/sub01/menu_05.png" alt="쏘이츄"></a>
+                    <strong>쏘이츄</strong>
+                    <p>15,000원</p>
+                </li>
+                <li><a href="#"><img src="img/sub01/menu_06.png" alt="마늘간장"></a>
+                    <strong>마늘간장</strong>
+                    <p>15,000원</p>
+                </li>
+                <li><a href="#"><img src="img/sub01/menu_07.png" alt="눈꽃치즈팡"></a>
+                    <strong>눈꽃치즈팡</strong>
+                    <p>15,000원</p>
+                </li>
+                <li><a href="#"><img src="img/sub01/menu_08.png" alt="레디핫"></a>
+                    <strong>레디핫</strong>
+                    <p>15,000원</p>
+                </li>
+            </ul>
+        </div><!-- sub_s_c -->
+       </div>
+    </div><!-- sub_wrap -->
+<? include "footer.html" ?>
+<!-- Swiper JS -->
+<script src="dist/js/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper1 = new Swiper('.sw1', {
+      spaceBetween: 0,
+      loop: false, 
+      grabCursor:true,
+      slidesPerView:'auto',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true, //블릿버튼 제어
+      },
+     
+      
+    });
+
+    var cnt = 1;
+    $('.mb_sub_menu .swiper-slide').click(function(){
+        $('.mb_sub_menu .swiper-slide').removeClass('on');
+        $(this).addClass('on');
+        cnt = $(this).index();
+        $('#sub_menu ul li').removeClass('on');
+        $('#sub_menu ul li').eq(cnt).addClass('on');
+        return false;
+    });
+    $('#sub_menu ul li').click(function(){
+        $('#sub_menu ul li').removeClass('on');
+        $(this).addClass('on');
+        cnt = $(this).index();
+        $('.mb_sub_menu .swiper-slide').removeClass('on');
+        $('.mb_sub_menu .swiper-slide').eq(cnt).addClass('on');
+        return false;
+    });
+</script>
+
+</body>
+</html>
