@@ -644,11 +644,12 @@ section {
   background: url("../img/portfolio/photo/00.jpg") center center no-repeat;
   background-size: cover;
   min-height: 500px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .about .skills-content {
-  margin-top: 30px;
+  margin-top: 8px;
 }
 
 .about .skills-content .progress {
